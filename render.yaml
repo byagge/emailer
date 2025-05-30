@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: emailer
+    env: python
+    buildCommand: ""
+    startCommand: core.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: core.settings
+      - key: PYTHON_VERSION
+        value: 3.10
