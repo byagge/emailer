@@ -3,7 +3,6 @@
 import os
 import sys
 
-
 def main():
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings.dev")
@@ -16,23 +15,36 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
 
-    # --- TEMPORARY SUPERUSER CREATION BLOCK ---
-    if "runserver" in sys.argv or "runserver_plus" in sys.argv or "migrate" in sys.argv:
+    # --- AUTO-CREATE SUPERUSER BLOCK (enable via env var) ---
+    if os.environ.get('CREATE_SUPERUSER') == 'true':
         try:
             import django
             django.setup()
             from django.contrib.auth import get_user_model
             User = get_user_model()
-            if not User.objects.filter(username="admin").exists():
+
+            # параметры суперпользователя
+            username_field = User.USERNAME_FIELD
+            email = 'admin@admin.com'
+            password = 'admin123'
+
+            # собираем аргументы для create_superuser()
+            create_kwargs = {username_field: email, 'password': password}
+            for field in getattr(User, 'REQUIRED_FIELDS', []):
+                if field != username_field:
+                    create_kwargs[field] = 'admin'
+
+            # проверяем, есть ли уже такой пользователь
+            lookup = {username_field: create_kwargs[username_field]}
+            if not User.objects.filter(**lookup).exists():
                 print("🛠️ Creating superuser...")
-                User.objects.create_superuser("admin", "admin@admin.com", "admin123")
-                print("✅ Superuser 'admin' created.")
+                User.objects.create_superuser(**create_kwargs)
+                print("✅ Superuser created.")
         except Exception as e:
             print(f"⚠️ Error creating superuser: {e}")
-    # -------------------------------------------
+    # -------------------------------------------------------
 
     execute_from_command_line(sys.argv)
-
 
 if __name__ == '__main__':
     main()
