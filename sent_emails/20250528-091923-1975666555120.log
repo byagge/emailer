@@ -1,0 +1,660 @@
+Content-Type: multipart/alternative;
+ boundary="===============3039869711584044783=="
+MIME-Version: 1.0
+Subject: admin
+From:  <hello@example.com>
+To: alice@outlook.com
+Date: Wed, 28 May 2025 03:19:23 -0000
+Message-ID: <174840236330.4240.7072228049377406781@Lenovo.localnet>
+
+--===============3039869711584044783==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Confirm Your Email Address
+    
+    
+        
+            
+                96
+            
+        
+    
+    
+
+
+    
+    
+    
+        
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            
+                            
+                        
+                    
+                    
+                    
+                    
+                        
+                            
+                            
+                            
+                                Confirm your email address
+                            
+                            
+                            
+                            
+                                Thanks for signing up! To get started, please confirm your email by clicking the button below.
+                            
+                            
+                            
+                            
+                                
+                                    
+                                        
+                                            Verify My Email
+                                        
+                                    
+                                
+                            
+                            
+                            
+                            
+                                If you didn't create an account, you can safely ignore this message.
+                            
+                            
+                        
+                    
+                    
+                    
+                    
+                        
+                            
+                            
+                            
+                                Your Company Name
+                                123 Business Street, Suite 100
+                                City, State 12345
+                                support@yourcompany.com
+                            
+                            
+                            
+                            
+                                Help Center
+                                |
+                                Unsubscribe
+                            
+                            
+                        
+                    
+                    
+                
+                
+            
+        
+    
+    
+    
+    
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: 0 !important;
+            }
+            .content-padding {
+                padding: 20px !important;
+            }
+            .header-padding {
+                padding: 30px 20px 20px !important;
+            }
+            .footer-padding {
+                padding: 20px !important;
+            }
+            h1 {
+                font-size: 24px !important;
+            }
+            .cta-button {
+                padding: 14px 28px !important;
+                font-size: 15px !important;
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .content-padding {
+                padding: 15px !important;
+            }
+            .header-padding {
+                padding: 25px 15px 15px !important;
+            }
+            .footer-padding {
+                padding: 15px !important;
+            }
+            h1 {
+                font-size: 22px !important;
+            }
+            p {
+                font-size: 15px !important;
+            }
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            .dark-mode-bg {
+                background-color: #1a1a1a !important;
+            }
+            .dark-mode-content {
+                background-color: #2d2d2d !important;
+                color: #ffffff !important;
+            }
+            .dark-mode-text {
+                color: #e5e5e5 !important;
+            }
+            .dark-mode-muted {
+                color: #a0a0a0 !important;
+            }
+        }
+--===============3039869711584044783==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Confirm Your Email Address</title>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Inter', 'Poppins', Arial, sans-serif; background-color: #F5F7FA; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+    
+    <!-- Wrapper Table for Email Client Compatibility -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #F5F7FA;">
+        <tr>
+            <td style="padding: 20px 0;">
+                
+                <!-- Main Email Container -->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                    
+                    <!-- Header Section -->
+                    <tr>
+                        <td style="padding: 40px 30px 30px; text-align: center; border-bottom: 1px solid #F5F7FA;">
+                            <!-- Company Logo -->
+                            <img src="https://via.placeholder.com/150x50/2D6CDF/FFFFFF?text=LOGO" alt="Company Logo" style="max-width: 150px; height: auto; display: block; margin: 0 auto;" width="150">
+                        </td>
+                    </tr>
+                    
+                    <!-- Main Content Section -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            
+                            <!-- Main Title -->
+                            <h1 style="color: #2D6CDF; font-size: 28px; font-weight: 600; line-height: 1.3; margin: 0 0 20px; text-align: center; font-family: 'Inter', 'Poppins', Arial, sans-serif;">
+                                Confirm your email address
+                            </h1>
+                            
+                            <!-- Intro Text -->
+                            <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0 0 30px; text-align: center; font-family: 'Inter', 'Poppins', Arial, sans-serif;">
+                                Thanks for signing up! To get started, please confirm your email by clicking the button below.
+                            </p>
+                            
+                            <!-- CTA Button -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="text-align: center; padding: 20px 0;">
+                                        <a href="https://yourdomain.com/verify?token=xyz" style="display: inline-block; background-color: #2D6CDF; color: #FFFFFF; font-size: 16px; font-weight: 600; text-decoration: none; padding: 16px 32px; border-radius: 6px; font-family: 'Inter', 'Poppins', Arial, sans-serif; transition: background-color 0.3s ease;">
+                                            Verify My Email
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Optional Paragraph -->
+                            <p style="color: #666666; font-size: 14px; line-height: 1.5; margin: 30px 0 0; text-align: center; font-family: 'Inter', 'Poppins', Arial, sans-serif;">
+                                If you didn't create an account, you can safely ignore this message.
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer Section -->
+                    <tr>
+                        <td style="padding: 30px; background-color: #F5F7FA; border-top: 1px solid #E5E7EB; border-radius: 0 0 8px 8px;">
+                            
+                            <!-- Company Information -->
+                            <p style="color: #666666; font-size: 12px; line-height: 1.4; margin: 0 0 10px; text-align: center; font-family: 'Inter', 'Poppins', Arial, sans-serif;">
+                                <strong>Your Company Name</strong><br>
+                                123 Business Street, Suite 100<br>
+                                City, State 12345<br>
+                                support@yourcompany.com
+                            </p>
+                            
+                            <!-- Footer Links -->
+                            <p style="color: #666666; font-size: 12px; line-height: 1.4; margin: 15px 0 0; text-align: center; font-family: 'Inter', 'Poppins', Arial, sans-serif;">
+                                <a href="#" style="color: #2D6CDF; text-decoration: none; margin: 0 10px;">Help Center</a>
+                                <span style="color: #CCCCCC;">|</span>
+                                <a href="#" style="color: #2D6CDF; text-decoration: none; margin: 0 10px;">Unsubscribe</a>
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+            </td>
+        </tr>
+    </table>
+    
+    <!-- Mobile Styles -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: 0 !important;
+            }
+            .content-padding {
+                padding: 20px !important;
+            }
+            .header-padding {
+                padding: 30px 20px 20px !important;
+            }
+            .footer-padding {
+                padding: 20px !important;
+            }
+            h1 {
+                font-size: 24px !important;
+            }
+            .cta-button {
+                padding: 14px 28px !important;
+                font-size: 15px !important;
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .content-padding {
+                padding: 15px !important;
+            }
+            .header-padding {
+                padding: 25px 15px 15px !important;
+            }
+            .footer-padding {
+                padding: 15px !important;
+            }
+            h1 {
+                font-size: 22px !important;
+            }
+            p {
+                font-size: 15px !important;
+            }
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            .dark-mode-bg {
+                background-color: #1a1a1a !important;
+            }
+            .dark-mode-content {
+                background-color: #2d2d2d !important;
+                color: #ffffff !important;
+            }
+            .dark-mode-text {
+                color: #e5e5e5 !important;
+            }
+            .dark-mode-muted {
+                color: #a0a0a0 !important;
+            }
+        }
+    </style>
+
+</body>
+</html>
+--===============3039869711584044783==--
+
+-------------------------------------------------------------------------------
+Content-Type: multipart/alternative;
+ boundary="===============1800835505022297943=="
+MIME-Version: 1.0
+Subject: admin
+From:  <hello@example.com>
+To: email2@email.com
+Date: Wed, 28 May 2025 03:19:23 -0000
+Message-ID: <174840236336.4240.13723721038335213334@Lenovo.localnet>
+
+--===============1800835505022297943==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Confirm Your Email Address
+    
+    
+        
+            
+                96
+            
+        
+    
+    
+
+
+    
+    
+    
+        
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            
+                            
+                        
+                    
+                    
+                    
+                    
+                        
+                            
+                            
+                            
+                                Confirm your email address
+                            
+                            
+                            
+                            
+                                Thanks for signing up! To get started, please confirm your email by clicking the button below.
+                            
+                            
+                            
+                            
+                                
+                                    
+                                        
+                                            Verify My Email
+                                        
+                                    
+                                
+                            
+                            
+                            
+                            
+                                If you didn't create an account, you can safely ignore this message.
+                            
+                            
+                        
+                    
+                    
+                    
+                    
+                        
+                            
+                            
+                            
+                                Your Company Name
+                                123 Business Street, Suite 100
+                                City, State 12345
+                                support@yourcompany.com
+                            
+                            
+                            
+                            
+                                Help Center
+                                |
+                                Unsubscribe
+                            
+                            
+                        
+                    
+                    
+                
+                
+            
+        
+    
+    
+    
+    
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: 0 !important;
+            }
+            .content-padding {
+                padding: 20px !important;
+            }
+            .header-padding {
+                padding: 30px 20px 20px !important;
+            }
+            .footer-padding {
+                padding: 20px !important;
+            }
+            h1 {
+                font-size: 24px !important;
+            }
+            .cta-button {
+                padding: 14px 28px !important;
+                font-size: 15px !important;
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .content-padding {
+                padding: 15px !important;
+            }
+            .header-padding {
+                padding: 25px 15px 15px !important;
+            }
+            .footer-padding {
+                padding: 15px !important;
+            }
+            h1 {
+                font-size: 22px !important;
+            }
+            p {
+                font-size: 15px !important;
+            }
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            .dark-mode-bg {
+                background-color: #1a1a1a !important;
+            }
+            .dark-mode-content {
+                background-color: #2d2d2d !important;
+                color: #ffffff !important;
+            }
+            .dark-mode-text {
+                color: #e5e5e5 !important;
+            }
+            .dark-mode-muted {
+                color: #a0a0a0 !important;
+            }
+        }
+--===============1800835505022297943==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Confirm Your Email Address</title>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Inter', 'Poppins', Arial, sans-serif; background-color: #F5F7FA; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+    
+    <!-- Wrapper Table for Email Client Compatibility -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #F5F7FA;">
+        <tr>
+            <td style="padding: 20px 0;">
+                
+                <!-- Main Email Container -->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                    
+                    <!-- Header Section -->
+                    <tr>
+                        <td style="padding: 40px 30px 30px; text-align: center; border-bottom: 1px solid #F5F7FA;">
+                            <!-- Company Logo -->
+                            <img src="https://via.placeholder.com/150x50/2D6CDF/FFFFFF?text=LOGO" alt="Company Logo" style="max-width: 150px; height: auto; display: block; margin: 0 auto;" width="150">
+                        </td>
+                    </tr>
+                    
+                    <!-- Main Content Section -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            
+                            <!-- Main Title -->
+                            <h1 style="color: #2D6CDF; font-size: 28px; font-weight: 600; line-height: 1.3; margin: 0 0 20px; text-align: center; font-family: 'Inter', 'Poppins', Arial, sans-serif;">
+                                Confirm your email address
+                            </h1>
+                            
+                            <!-- Intro Text -->
+                            <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0 0 30px; text-align: center; font-family: 'Inter', 'Poppins', Arial, sans-serif;">
+                                Thanks for signing up! To get started, please confirm your email by clicking the button below.
+                            </p>
+                            
+                            <!-- CTA Button -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="text-align: center; padding: 20px 0;">
+                                        <a href="https://yourdomain.com/verify?token=xyz" style="display: inline-block; background-color: #2D6CDF; color: #FFFFFF; font-size: 16px; font-weight: 600; text-decoration: none; padding: 16px 32px; border-radius: 6px; font-family: 'Inter', 'Poppins', Arial, sans-serif; transition: background-color 0.3s ease;">
+                                            Verify My Email
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Optional Paragraph -->
+                            <p style="color: #666666; font-size: 14px; line-height: 1.5; margin: 30px 0 0; text-align: center; font-family: 'Inter', 'Poppins', Arial, sans-serif;">
+                                If you didn't create an account, you can safely ignore this message.
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer Section -->
+                    <tr>
+                        <td style="padding: 30px; background-color: #F5F7FA; border-top: 1px solid #E5E7EB; border-radius: 0 0 8px 8px;">
+                            
+                            <!-- Company Information -->
+                            <p style="color: #666666; font-size: 12px; line-height: 1.4; margin: 0 0 10px; text-align: center; font-family: 'Inter', 'Poppins', Arial, sans-serif;">
+                                <strong>Your Company Name</strong><br>
+                                123 Business Street, Suite 100<br>
+                                City, State 12345<br>
+                                support@yourcompany.com
+                            </p>
+                            
+                            <!-- Footer Links -->
+                            <p style="color: #666666; font-size: 12px; line-height: 1.4; margin: 15px 0 0; text-align: center; font-family: 'Inter', 'Poppins', Arial, sans-serif;">
+                                <a href="#" style="color: #2D6CDF; text-decoration: none; margin: 0 10px;">Help Center</a>
+                                <span style="color: #CCCCCC;">|</span>
+                                <a href="#" style="color: #2D6CDF; text-decoration: none; margin: 0 10px;">Unsubscribe</a>
+                            </p>
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+            </td>
+        </tr>
+    </table>
+    
+    <!-- Mobile Styles -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: 0 !important;
+            }
+            .content-padding {
+                padding: 20px !important;
+            }
+            .header-padding {
+                padding: 30px 20px 20px !important;
+            }
+            .footer-padding {
+                padding: 20px !important;
+            }
+            h1 {
+                font-size: 24px !important;
+            }
+            .cta-button {
+                padding: 14px 28px !important;
+                font-size: 15px !important;
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .content-padding {
+                padding: 15px !important;
+            }
+            .header-padding {
+                padding: 25px 15px 15px !important;
+            }
+            .footer-padding {
+                padding: 15px !important;
+            }
+            h1 {
+                font-size: 22px !important;
+            }
+            p {
+                font-size: 15px !important;
+            }
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            .dark-mode-bg {
+                background-color: #1a1a1a !important;
+            }
+            .dark-mode-content {
+                background-color: #2d2d2d !important;
+                color: #ffffff !important;
+            }
+            .dark-mode-text {
+                color: #e5e5e5 !important;
+            }
+            .dark-mode-muted {
+                color: #a0a0a0 !important;
+            }
+        }
+    </style>
+
+</body>
+</html>
+--===============1800835505022297943==--
+
+-------------------------------------------------------------------------------
