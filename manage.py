@@ -15,6 +15,22 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+
+    # --- TEMPORARY SUPERUSER CREATION BLOCK ---
+    if "runserver" in sys.argv or "runserver_plus" in sys.argv or "migrate" in sys.argv:
+        try:
+            import django
+            django.setup()
+            from django.contrib.auth import get_user_model
+            User = get_user_model()
+            if not User.objects.filter(username="admin").exists():
+                print("🛠️ Creating superuser...")
+                User.objects.create_superuser("admin", "admin@admin.com", "admin123")
+                print("✅ Superuser 'admin' created.")
+        except Exception as e:
+            print(f"⚠️ Error creating superuser: {e}")
+    # -------------------------------------------
+
     execute_from_command_line(sys.argv)
 
 
