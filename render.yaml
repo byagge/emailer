@@ -2,10 +2,28 @@ services:
   - type: web
     name: emailer
     env: python
-    buildCommand: ""
-    startCommand: core.wsgi:application
+    # Install dependencies before build
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+
+    # Run Django app with Gunicorn
+    startCommand: gunicorn core.wsgi:application
+
+    # Environment variables for Django
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: core.settings
       - key: PYTHON_VERSION
-        value: 3.10
+        value: "3.10"
+      - key: CREATE_SUPERUSER
+        value: "true"
+
+    # After deploying, run migrations and auto-create superuser if needed
+    postDeployCommand: |
+      python manage.py migrate --no-input
+      echo "from django.contrib.auth import get_user_model; \
+      User = get_user_model(); \
+      User.objects.filter(username='admin').exists() or \
+      User.objects.create_superuser('admin','admin@example.com','admin123')" \
+      | python manage.py shell
