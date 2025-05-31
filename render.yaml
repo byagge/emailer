@@ -7,20 +7,25 @@ services:
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: core.settings.dev    # подтянет SECRET_KEY из core/settings/dev.py
-      # DATABASE_URL не нужен — Django по-умолчанию будет использовать sqlite3
+      # Для SQLite DATABASE_URL не нужен
+      - key: DJANGO_SUPERUSER_USERNAME
+        value: admin
+      - key: DJANGO_SUPERUSER_EMAIL
+        value: admin@example.com
+      - key: DJANGO_SUPERUSER_PASSWORD
+        value: admin123
 
     # Сборка: устанавливаем зависимости
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
 
-    # Запуск: миграции, создание суперпользователя (если отсутствует) и Gunicorn
+    # После деплоя: применяем миграции и создаём суперпользователя (одноразово)
+    postdeploy:
+      - python manage.py migrate --no-input
+      - python manage.py collectstatic --no-input  # если используете staticfiles
+      - python manage.py createsuperuser --no-input
+
+    # Запуск: только Gunicorn
     startCommand: |
-      bash -lc "\
-        python manage.py migrate --no-input && \
-        python manage.py shell -c \"\
-from django.contrib.auth import get_user_model; \
-User = get_user_model(); \
-if not User.objects.filter(username='admin').exists(): \
-    User.objects.create_superuser('admin','admin@example.com','admin123')\" && \
-        gunicorn core.wsgi:application --bind 0.0.0.0:\$PORT"
+      gunicorn core.wsgi:application --bind 0.0.0.0:$PORT
