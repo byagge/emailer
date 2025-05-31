@@ -6,21 +6,12 @@ services:
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: core.settings.dev
+      - key: AUTO_CREATE_SUPERUSER
+        value: true
 
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
-
-    postdeploy: |
-      bash -c "python manage.py migrate --no-input && \
-python manage.py shell -c 'from django.contrib.auth import get_user_model; \
-User = get_user_model(); \
-email = \"admin@example.com\"; \
-password = \"admin123\"; \
-print(\"🔎 Checking for admin...\"); \
-exists = User.objects.filter(email=email).exists(); \
-print(\"✅ Already exists\" if exists else \"🛠️ Creating superuser...\"); \
-None if exists else User.objects.create_superuser(email=email, password=password)'"
 
     startCommand: |
       gunicorn core.wsgi:application --bind 0.0.0.0:$PORT
