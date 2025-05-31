@@ -15,7 +15,7 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
 
-    # --- AUTO-CREATE SUPERUSER BLOCK (enable via env var) ---
+    # --- AUTO-CREATE SUPERUSER BLOCK ---
     if os.environ.get('CREATE_SUPERUSER') == 'true':
         try:
             import django
@@ -23,23 +23,15 @@ def main():
             from django.contrib.auth import get_user_model
             User = get_user_model()
 
-            # параметры суперпользователя
-            username_field = User.USERNAME_FIELD
             email = 'admin@admin.com'
             password = 'admin123'
 
-            # собираем аргументы для create_superuser()
-            create_kwargs = {username_field: email, 'password': password}
-            for field in getattr(User, 'REQUIRED_FIELDS', []):
-                if field != username_field:
-                    create_kwargs[field] = 'admin'
-
-            # проверяем, есть ли уже такой пользователь
-            lookup = {username_field: create_kwargs[username_field]}
-            if not User.objects.filter(**lookup).exists():
+            if not User.objects.filter(email=email).exists():
                 print("🛠️ Creating superuser...")
-                User.objects.create_superuser(**create_kwargs)
+                User.objects.create_superuser(email=email, password=password)
                 print("✅ Superuser created.")
+            else:
+                print("ℹ️ Superuser already exists.")
         except Exception as e:
             print(f"⚠️ Error creating superuser: {e}")
     # -------------------------------------------------------
