@@ -7,11 +7,18 @@ services:
       - key: DJANGO_SETTINGS_MODULE
         value: core.settings.dev
       - key: AUTO_CREATE_SUPERUSER
-        value: true
+        value: "true"
 
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
 
     startCommand: |
+      # 1) Прогоним миграции (если база «свежая»)
+      python manage.py migrate --noinput
+
+      # 2) Любая команда, которая дёрнет main() и создаст суперпользователя
+      python manage.py check
+
+      # 3) Запускаем сам веб-сервер
       gunicorn core.wsgi:application --bind 0.0.0.0:$PORT
