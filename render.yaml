@@ -1,24 +1,38 @@
+# render.yaml
 services:
   - type: web
-    name: emailer
+    name: emailer-service
     env: python
-
-    envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: core.settings.dev
-      - key: AUTO_CREATE_SUPERUSER
-        value: "true"
+    region: oregon
+    plan: free
+    branch: main
 
     buildCommand: |
-      pip install --upgrade pip
       pip install -r requirements.txt
+      python manage.py migrate
+      python create_superuser.py
+      python manage.py collectstatic --noinput
 
-    startCommand: |
-      # 1) Прогоним миграции (если база «свежая»)
-      python manage.py migrate --noinput
+    startCommand: gunicorn core.wsgi:application
 
-      # 2) Любая команда, которая дёрнет main() и создаст суперпользователя
-      python manage.py check
-
-      # 3) Запускаем сам веб-сервер
-      gunicorn core.wsgi:application --bind 0.0.0.0:$PORT
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        fromDatabase: true
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: DJANGO_ALLOWED_HOSTS
+        value: "*"
+      - key: DJANGO_SUPERUSER_USERNAME
+        fromDatabase: true
+      - key: DJANGO_SUPERUSER_EMAIL
+        fromDatabase: true
+      - key: DJANGO_SUPERUSER_PASSWORD
+        fromDatabase: true
+      - key: EMAIL_HOST
+        value: smtp.gmail.com
+      - key: EMAIL_PORT
+        value: "587"
+      - key: EMAIL_HOST_USER
+        fromDatabase: true
+      - key: EMAIL_HOST_PASSWORD
+        fromDatabase: true
